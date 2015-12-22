@@ -42,11 +42,11 @@ Creating the Virtual Machine root filesystem
 First, you need the image zipfile that is distributed with the FRC Update Suite.
 On a machine with the RoboRIO imaging program installed, you can find it at:
 
-  C:\Program Files (x86)\National Instruments\LabVIEW 2015\project\roboRIO Tool\FRC Images
+    C:\Program Files (x86)\National Instruments\LabVIEW 2015\project\roboRIO Tool\FRC Images
 
 Copy the zipfile to your Linux host, and run the following:
 
-  ./create_rootfs.sh /path/to/FRC_roboRIO_*.zip
+    ./create_rootfs.sh /path/to/FRC_roboRIO_*.zip
   
 Give it a few minutes, enter in your password when prompted, and at the end you 
 should end up with an image file and a kernel file. This only needs to be done
@@ -57,14 +57,14 @@ Running the Virtual Machine
 
 Simple command:
 
-  ./run_vm.sh
+    ./run_vm.sh
 
 At the moment there are a lot of error messages, but eventually it will finish
 starting and you can login via the console or via SSH.
 
 To SSH into your VM, you can execute the following:
 
-  ssh admin@localhost -p 10022
+    ssh admin@localhost -p 10022
   
 Snapshots
 ---------
@@ -73,7 +73,7 @@ QEMU has good support for snapshots and other such things. When the rootfs is
 created, an initial snapshot is created in case you want to revert the VM
 back to a 'pristine' state. To do so:
 
-  qemu-img snapshot -a initial roborio.img
+    qemu-img snapshot -a initial roborio.img
 
 Known issues
 ------------
