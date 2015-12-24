@@ -12,7 +12,7 @@ NI hardware.. this might be for you.
 
 Tested with:
 
-* Fedora 22
+* Fedora 22, OSX (run only)
 * QEMU 2.5.0
 * FRC images: 2016v18
   * I tried 2015v23, but there's an error starting the NI configuration daemon
@@ -35,6 +35,7 @@ For creating an image:
 For running the created image:
 
 * QEMU arm emulator (qemu-system-arm)
+  * Works on Linux and OSX
 
 Creating the Virtual Machine root filesystem
 --------------------------------------------
