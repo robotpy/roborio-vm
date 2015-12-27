@@ -66,7 +66,18 @@ starting and you can login via the console or via SSH.
 To SSH into your VM, you can execute the following:
 
     ssh admin@localhost -p 10022
-  
+    
+Or, you can setup an SSH alias by adding this to `.ssh/config`:
+
+    Host roborio-vm
+      User admin
+      Hostname 127.0.0.1
+      Port 10022
+      
+Then you can login using the following:
+
+    ssh roborio-vm
+
 Snapshots
 ---------
 
