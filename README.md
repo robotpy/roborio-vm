@@ -86,6 +86,8 @@ created, an initial snapshot is created in case you want to revert the VM
 back to a 'pristine' state. To do so:
 
     qemu-img snapshot -a initial roborio.img
+    
+There is now also a `reset.sh` command that you can run to do this.
 
 Known issues
 ------------
@@ -94,6 +96,20 @@ Known issues
 * Probably should use a different filesystem for the image
 * Lots of error messages on bootup, would be nice if we could use the actual
   kernel used on the RoboRIO (this seems like it should be possible)
+  
+Building QEMU from source
+=========================
+
+Download [latest version of QEMU](http://wiki.qemu.org/Download), and...
+
+    tar -xf qemu-2.5.0.tar.bz2
+    cd qemu-2.5.0
+    mkdir build
+    cd build
+    ../configure --target-list arm-softmmu --enable-fdt
+    make
+    make install
+
 
 Contributing new changes
 ========================
