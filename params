@@ -2,6 +2,6 @@
 IMG_FILE="roborio.img"
 
 RAM_SIZE="1024" # in MB
-HDD_SIZE="10G"  
+HDD_SIZE="20G"
 
 LOCAL_SSH_PORT=10022
