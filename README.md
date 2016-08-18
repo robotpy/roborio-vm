@@ -12,8 +12,8 @@ NI hardware.. this might be for you.
 
 Tested with:
 
-* Fedora 22, OSX (run only)
-* QEMU 2.5.0
+* Fedora 22/24, OSX (run only)
+* QEMU 2.5.0, 2.6.1
 * FRC images: 2016v18
   * I tried 2015v23, but there's an error starting the NI configuration daemon
     and so ssh refuses to start.
@@ -102,11 +102,11 @@ Building QEMU from source
 
 Download [latest version of QEMU](http://wiki.qemu.org/Download), and...
 
-    tar -xf qemu-2.5.0.tar.bz2
-    cd qemu-2.5.0
+    tar -xf qemu-2.6.1.tar.bz2
+    cd qemu-2.6.1
     mkdir build
     cd build
-    ../configure --target-list arm-softmmu --enable-fdt
+    ../configure --target-list=arm-softmmu --enable-fdt
     make
     make install
 
