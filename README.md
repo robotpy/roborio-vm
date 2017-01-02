@@ -110,6 +110,15 @@ Download [latest version of QEMU](http://wiki.qemu.org/Download), and...
     make
     make install
 
+Versions of QEMU that I've had work for me:
+
+* 2.5
+* 2.6.x
+* 2.8.x
+
+Versions known to not work:
+
+* 2.7.0
 
 Contributing new changes
 ========================
