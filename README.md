@@ -14,7 +14,7 @@ Tested with:
 
 * Fedora 22/24, OSX (run only)
 * QEMU 2.5.0, 2.6.1
-* FRC images: 2016v18
+* FRC images: 2017v8 and 2016v18
   * I tried 2015v23, but there's an error starting the NI configuration daemon
     and so ssh refuses to start.
 
