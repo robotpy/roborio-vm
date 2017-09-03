@@ -14,7 +14,8 @@ qemu-system-arm \
   -display none -serial null -serial mon:stdio \
   -localtime \
   -append "console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0 rw" \
-  -redir tcp:${LOCAL_SSH_PORT}::22 \
+  -net user,hostfwd=tcp::${LOCAL_SSH_PORT}-:22 \
+  -net nic \
   -sd "$IMG_FILE"
   
 # TODO: how to safely shutdown the system?
