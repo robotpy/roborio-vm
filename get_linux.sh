@@ -9,7 +9,7 @@ cd `dirname $0`
 [ -d linux ] || mkdir linux
 pushd linux
 
-wget -c http://www.wiki.xilinx.com/file/view/2016.2-zed-release.tar.xz/586243277/2016.2-zed-release.tar.xz
+wget -c https://xilinx-wiki.atlassian.net/wiki/download/attachments/18841788/2016.2-zed-release.tar.xz
 
 [ ! -f uImage ] || rm uImage
 [ ! -f devicetree.dtb ] || rm devicetree.dtb
